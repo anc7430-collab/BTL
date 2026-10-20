@@ -31,7 +31,7 @@ Trang chủ (index.html): Hiển thị danh mục sản phẩm dưới dạng l�
 
 
 
-## 📁 Cấu trúc thư mục mã nguồn
+ Cấu trúc thư mục mã nguồn
 
 ```text
 bai-tap-lon/
