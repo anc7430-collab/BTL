@@ -31,8 +31,9 @@ Trang chủ (index.html): Hiển thị danh mục sản phẩm dưới dạng l�
 
 
 
-Cấu trúc thư mục mã nguồn
-'''text
+## 📁 Cấu trúc thư mục mã nguồn
+
+```text
 bai-tap-lon/
 ├── index.html        # Trang chủ hiển thị danh sách sách
 ├── cart.html         # Trang giỏ hàng & thanh toán
