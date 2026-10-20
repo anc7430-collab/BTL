@@ -31,14 +31,14 @@ Trang chủ (index.html): Hiển thị danh mục sản phẩm dưới dạng l�
 
 
 
- CẤU TRÚC THƯ MỤC MÃ NGUỒN
-  text
+Cấu trúc thư mục mã nguồn
+
 bai-tap-lon/
-├── index.html        # Trang chủ hiển thị danh sách sách
-├── cart.html         # Trang giỏ hàng & thanh toán
+├── index.html        # Trang chủ hiển thị danh sách sách[cite: 11]
+├── cart.html         # Trang giỏ hàng & thanh toán[cite: 9]
 ├── login.html        # Trang đăng nhập / đăng ký
 ├── theloai.html      # Trang lọc sách theo thể loại
-├── baitaplon.css     # File định dạng giao diện chung
-├── baitaplon.js      # File xử lý logic JavaScript & localStorage
+├── baitaplon.css     # File định dạng giao diện chung[cite: 4]
+├── baitaplon.js      # File xử lý logic JavaScript & localStorage[cite: 5]
 ├── README.md         # File giới thiệu dự án
-└── images/           # Thư mục chứa hình ảnh bìa sách và banner
+└── images/           # Thư mục chứa hình ảnh bìa sách và banner[cite: 11]
