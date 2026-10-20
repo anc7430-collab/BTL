@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiệm Sách Online</title>
+    <link rel="stylesheet" href="baitaplon.css">
+</head>
+
+<body>
+    <script src="baitaplon.js"></script>
+    <!-- thanh điều hướng -->
+    <header>
+        <div class="logo"> Tiệm Sách Online</div>
+        <nav>
+            <a href="index.php" class="active">Trang chủ</a>
+            <a href="theloai.html">Thể loại</a>
+            <a href="cart.html">Giỏ hàng</a>
+            <a href="login.html" class="admin-link">Đăng Nhập</a>
+        </nav>
+    </header>
+
+
+<!-- banner sự kiện khuyến mãi -->
+<section class="promo-slider">
+
+    <div class="promo-slides">
+
+        <!-- Sk 1 -->
+        <div class="promo-slide active promo-pink">
+            <div class="promo-info">
+                <span class="promo-tag">SIEU SALE</span>
+                <h2>HỘI SÁCH ONLINE</h2>
+                <h1>GIẢM GIÁ ĐẾN 50%</h1>
+                <p>thoả sức khám phá những cuốn sách hay với giá ưu đãi</p>
+                <a href="theloai.html" class="promo-button">MUA SÁCH NGAY</a>
+            </div>
+            <div class="promo-decoration">50%</div>
+        </div>
+
+        <!-- Sk 2 -->
+        <div class="promo-slide promo-blue">
+            <div class="promo-info">
+                <span class="promo-tag">FLASH SALE</span>
+                <h2>GIỜ VÀNG SĂN SÁCH</h2>
+                <h1>ƯU ĐÃI ĐẾN 40%</h1>
+                <p>Cơ hội sở hữu sách hay với giá hấp dẫn</p>
+                <a href="theloai.html" class="promo-button">KHÁM PHÁ NGAY</a>
+            </div>
+            <div class="promo-decoration">SALE!</div>
+        </div>
+
+        <!-- Sk 3 -->
+        <div class="promo-slide promo-green">
+            <div class="promo-info">
+                <span class="promo-tag">SỰ KIỆN ĐẶC BIỆT</span>
+                <h2>TUẦN LỄ SÁCH THIẾU NHI</h2>
+                <h1>GIẢM GIÁ ĐẾN 30%</h1>
+                <p>Những câu chuyện thú vị dành cho bạn đọc nhỏ tuổi.</p>
+                <a href="theloai.html" class="promo-button">XEM SÁCH NGAY</a>
+            </div>
+            <div class="promo-decoration">BOOK</div>
+        </div>
+
+        <!-- Sk 4 -->
+        <div class="promo-slide promo-purple">
+            <div class="promo-info">
+                <span class="promo-tag">SÁCH MỚI</span>
+                <h2>KHỞI ĐẦU HÀNH TRÌNH TRI THỨC</h2>
+                <h1>NHIỀU ĐẦU SÁCH MỚI</h1>
+                <p>Cập nhật những cuốn sách đáng chú ý tại tiệm sách Online.</p>
+                <a href="theloai.html" class="promo-button">KHÁM PHÁ NGAY</a>
+            </div>
+            <div class="promo-decoration">NEW</div>
+        </div>
+
+    </div>
+
+    <!-- chuyển banner -->
+    <button class="promo-arrow promo-prev" type="button"
+            aria-label="Su kien truoc">&#10094;</button>
+
+    <button class="promo-arrow promo-next" type="button"
+            aria-label="Su kien tiep theo">&#10095;</button>
+
+    <!-- chọn sự kiện -->
+    <div class="promo-dots">
+        <button class="promo-dot active" type="button" aria-label="Su kien 1"></button>
+        <button class="promo-dot" type="button" aria-label="Su kien 2"></button>
+        <button class="promo-dot" type="button" aria-label="Su kien 3"></button>
+        <button class="promo-dot" type="button" aria-label="Su kien 4"></button>
+    </div>
+
+</section>
+
+
+
+    <main class="container-cart">
+        <h2>GIỎ HÀNG ( 0 sản phẩm )</h2>
+        <p>Chưa Có Sản Phẩm Trong Giỏ Hàng</p>
+        <a href="index.html" class="btn-shopping">MUA SẮM NGAY</a>
+    </main>
+
+    <!-- Nội dung danh sách sách -->
+    <main class="container">
+        <h2>Danh mục sách nổi bật</h2>
+        
+        <div class="book-grid">
+    
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach1.jfif" alt="Bí mật thành Paris">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">195.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="ngungon">
+                <img src="images/sach2.jfif" alt="Chú bé chăn cừu">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">45.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach3.jfif" alt="Chúa tể những chiếc nhẫn">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">150.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="cotich">
+                <img src="images/sach4.jfif" alt="Cô bé quàng khăn đỏ">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">35.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-cayegory="tieuthuyet">
+                <img src="images/sach5.jfif" alt="Đồi gió hú">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">180.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tuyentranh">
+                <img src="images/sach6.jfif" alt="Doraemon Tập 23">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+    
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach7.jfif" alt="Doraemon Tập 15">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach8.jfif" alt="Doraemon Tập 22">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach9.jfif" alt="Không gia đình">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">168.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach10.jfif" alt="Những người khốn khổ">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">110.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+    
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach11.jfif" alt="Sách song ngữ">
+                <div class="book-info">
+                    <h3>Sách song ngữ</h3>
+                    <p class="price">55.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach12.jfif" alt="Số Đỏ - Vũ Trọng Phụng">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">140.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="cotich">
+                <img src="images/sach13.jfif" alt="Tấm Cám">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">30.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+    
+            <div class="book-card" data-category="cotich">
+                <img src="images/sach14.jfif" alt="Thế giới cổ tích">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">50.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+    
+            <div class="book-card" data-category="ngungon">
+                <img src="images/sach15.jfif" alt="Cò và Cáo">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">40.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach16.jfif" alt="Trắng án">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">90.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach17.jfif" alt="Sherlock Holmes">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">140.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/sach18.jfif" alt="Truyện trinh thám dành cho bé">
+                <div class="book-info">
+                    <h3>Truyện Thiếu Nhi</h3>
+                    <p class="price">80.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/sach19.jfif" alt="Ông già và biển cả">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">74.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach20.jfif" alt="Cáo trong đêm">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">85.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach21.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">74.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/sach22.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện cổ tích</h3>
+                    <p class="price">84.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+             <div class="book-card" data-category="trinhtham">
+                <img src="images/sach36.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện trinh thám</h3>
+                    <p class="price">24.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach35.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện trinh thám</h3>
+                    <p class="price">24.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+             <div class="book-card" data-category="thieunhi">
+                <img src="images/sach23.jfif" alt="hoàng tử ếch">
+                <div class="book-info">
+                    <h3>Truyện cổ tích</h3>
+                    <p class="price">80.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach31.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện trinh thám</h3>
+                    <p class="price">24.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach30.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện trinh thám</h3>
+                    <p class="price">24.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach33.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện trinh thám</h3>
+                    <p class="price">24.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach34.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện trinh thám</h3>
+                    <p class="price">24.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="cotich">
+                <img src="images/sach24.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">35.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach25.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">110.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach26.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">90.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach27.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">100.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach28.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">90.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach29.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach37.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">23.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach38.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach39.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach40.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+             <div class="book-card" data-category="truyentranh">
+                <img src="images/sach41.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">20.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach42.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">20.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach43.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">20.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach44.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">20.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach45.webp" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">24.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach46.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">20.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach47.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">20.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach48.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">20.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach49.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">20.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach50.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">20.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach51.webp" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach52.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach53.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach54.webp" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach55.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach56.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach57.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach57.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach58.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach59.webp" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach60.webp" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach61.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach62.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach63.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">27.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach64.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">83.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach65.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">89.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach66.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">79.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach67.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">99.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach68.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">100.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach69.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">90.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach70.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">113.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach71.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">103.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach72.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">93.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach73.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">101.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach74.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">106.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach75.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">80.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach76.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">99.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach77.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Song Ngữ</h3>
+                    <p class="price">83.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach78.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">23.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach79.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">53.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach80.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">52.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach81.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">50.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach78.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">23.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach82.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">24.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach83.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">23.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach84.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">43.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach85.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">49.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="trinhtham">
+                <img src="images/sach87.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">23.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/88.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">43.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+             <div class="book-card" data-category="thieunhi">
+                <img src="images/89.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">40.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+             <div class="book-card" data-category="thieunhi">
+                <img src="images/90.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">41.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+             <div class="book-card" data-category="thieunhi">
+                <img src="images/91.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">50.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+             <div class="book-card" data-category="thieunhi">
+                <img src="images/92.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">43.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+             <div class="book-card" data-category="thieunhi">
+                <img src="images/93.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">60.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/94.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">62.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/95.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">65.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/96.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">59.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/97.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">49.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/98.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">61.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/99.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">53.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/100.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">60.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/101.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">54.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/102.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">49.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/103.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">32.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/104.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">40.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/105.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">60.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/106.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">80.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/107.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">80.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/108.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">66.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/109.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">90.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/110.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">70.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/111.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">99.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/112.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Thiếu Nhi</h3>
+                    <p class="price">88.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/113.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">89.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/1.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">29.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/2.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">29.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/3.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">40.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/4.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">39.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/5.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">39.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/6.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">40.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/7.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">49.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/8.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">30.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/9.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">37.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/10.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">49.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/11.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/12.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">39.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/13.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/14.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">44.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/15.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">49.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/15.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">50.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/16.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">69.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/17.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">50.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/18.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">59.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/20.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">79.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/21.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">89.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/22.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">99.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/23.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">89.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/24.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">99.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/25.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">100.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/26.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">79.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/27.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">90.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/28.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">80.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/29.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">119.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/30.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">120.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/31.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">99.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/32.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">98.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/33.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">99.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/34.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">125.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/35.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">129.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+             <div class="book-card" data-category="trinhtham">
+                <img src="images/36.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">59.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+             <div class="book-card" data-category="trinhtham">
+                <img src="images/37.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">29.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+             <div class="book-card" data-category="trinhtham">
+                <img src="images/37.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">29.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+             <div class="book-card" data-category="trinhtham">
+                <img src="images/38.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">43.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+             <div class="book-card" data-category="trinhtham">
+                <img src="images/39.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">39.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+             <div class="book-card" data-category="trinhtham">
+                <img src="images/40.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Truyện Trinh Thám</h3>
+                    <p class="price">50.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 - Đề tài Quản lý bán sách  | Thiết kế Web</p>
+    </footer>
+    <script>
+const slides = document.querySelectorAll(".promo-slide");
+const dots = document.querySelectorAll(".promo-dot");
+const prevBtn = document.querySelector(".promo-prev");
+const nextBtn = document.querySelector(".promo-next");
+
+let currentSlide = 0;
+let autoPlay;
+
+function showSlide(index) {
+    slides[currentSlide].classList.remove("active");
+    dots[currentSlide].classList.remove("active");
+
+    currentSlide = (index + slides.length) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+    dots[currentSlide].classList.add("active");
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+function startAutoPlay() {
+    clearInterval(autoPlay);
+
+    autoPlay = setInterval(function() {
+        nextSlide();
+    }, 4000);
+}
+
+nextBtn.addEventListener("click", function() {
+    nextSlide();
+    startAutoPlay();
+});
+
+prevBtn.addEventListener("click", function() {
+    prevSlide();
+    startAutoPlay();
+});
+
+dots.forEach(function(dot, index) {
+    dot.addEventListener("click", function() {
+        showSlide(index);
+        startAutoPlay();
+    });
+});
+
+startAutoPlay();
+</script>
+</body>=-
+</html>
